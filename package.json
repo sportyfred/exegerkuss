@@ -10,9 +10,10 @@
   "license": "MIT",
   "dependencies": {
     "crawler-request": "^1.2.2",
-    "express": "^4.16.3",
+    "express": "^4.17.1",
     "pdf-parse": "^1.1.1",
-    "pug": "^2.0.3"
+    "pug": "^2.0.3",
+    "socket.io": "^4.1.1"
   },
   "devDependencies": {
     "nodemon": "^1.19.0"
