@@ -18,9 +18,10 @@ crawler("http://share.paretosec.com/upload/files/OTC_prices_web.pdf").then(funct
     pdf(response).then(function(data) {
 
     	  var str = data.text; 
-  var n = str.search("Exeger");
-    
-    var bidstring = str.slice(n+16, n+19);
+  
+    var m = str.replace(/%2C/g,".")
+     var n = m.search("Exeger");
+        var bidstring = str.slice(n+16, n+19);
     var askstring = str.slice(n+20, n+23);
     var kursstring = str.slice(n+23, n+26);
 
